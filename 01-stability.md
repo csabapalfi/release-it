@@ -1,14 +1,5 @@
 # Stability
 
-## Case study
-
-* As much as I like RMI’s programming model, it’s really dangerous because calls cannot be made to time out.
-
-* JDBC vs DB failover:
-The IP address used to create the connection will have moved from one host to another, but the current state of TCP connections will not carry over to the second database host.
-The key lesson to be drawn here, though, is that the JDBC speciﬁcation allows java.sql.Statement.close( ) to throw SQLException, so your code has to handle it.
-* Java thread dumps, kill -3 (SIGQUIT)
-
 ## Definitons
 
 * A transaction is an abstract unit of work processed by the system.

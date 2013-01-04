@@ -1,9 +1,12 @@
-# Capacity antipatterns
+---
+layout: post
+title: Capacity antipatterns
+---
 
 ## Resource Pool Contention
 * resource pool - necessary evil
 * The bottleneck arises when there is contention for the resources. More threads require one of the resources than are available
-* During “regular peak” operation, there should be no contention for resources.
+* During "regular peak" operation, there should be no contention for resources.
 * If possible, size resource pools to the request thread pool (witha grain of salt)
 * Prevent vicious cycles -> slow transaction -> more resource contention
 * Watch for Blocked Threads, use timeouts
@@ -16,7 +19,7 @@
 
 ## Overstaying Sessions
  * Keep sessions in memory for as short a time as reasonable
- * Remember that users don’t understand sessions
+ * Remember that users don't understand sessions
  * Kepp keys not whole objects
 
 ## Wasting bandwith with bad UI practices
@@ -28,7 +31,7 @@
 * be careful
 * make the Reload button irrelevant (fast site)
 
-## Handcrafted SQL
+## Handcrafted SQL
 * N+1 select, ORM collectioen members fetched one by one, one for the list then one for each member (N+1)
 * Book says handcrafted SQL is unpredictable, use ORM
 * DBA laugh test
@@ -41,7 +44,7 @@
 * schema should continously be adopted to support app func.
 * table growt rates and churn -> partiotionaing tables
 * multilevel storage, access time for historical data probably ok to suffer
-* Don’t mix transactions and reporting
+* Don't mix transactions and reporting
 * INDICES, PURGE OLD DATA, KEEP REPORTING OUT OF PROD
 
 ## Integration point latency

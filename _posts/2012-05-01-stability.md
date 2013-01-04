@@ -1,12 +1,15 @@
-# Stability
+---
+layout: post
+title: Stability
+---
 
-## Definitons
+## Definitons
 
 * A transaction is an abstract unit of work processed by the system.
 * I use system when I mean a collection of hosts, applications, network segments, power supplies, and so on, that process transactions from end to end
 * A resilient system keeps processing transactions, even when there are transient impulses (getting Slahdotted), persistent stresses (slow payment prcessing response), or component failures disrupting normal processing.
 
-## Failure modes
+## Failure modes
 
 * longevity tests
 * failure mode: how system behaves when shit hits the fan
@@ -14,9 +17,9 @@
 * crack stoppers
 * designed failure modes
 
-## Cracks propagate
+## Cracks propagate
 
-* SQLException because of failover -> exhausts conn pool -> brings down down the shole system 
+* SQLException because of failover -> exhausts conn pool -> brings down down the shole system
 * create more connections if the pool was exhausted
 * requesting threads block indefinitely -> no timeout
 * RMI client without a timeout -> set a timeout on the RMI sockets (custom socket factory)

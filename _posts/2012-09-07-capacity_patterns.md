@@ -1,6 +1,9 @@
-# Capacity patterns
+---
+layout: post
+title: Capacity patterns
+---
 
-## Pool connections
+## Pool connections
 
 * basic
 * timeout for connection checkout
@@ -15,7 +18,7 @@
 * when possible pre-compute instead
 * consider risk of stale data (TTLs, flushing) and access and change frequency
 
-## Precompute content
+## Precompute content
 
 * Precompute content that changes infrequently
 

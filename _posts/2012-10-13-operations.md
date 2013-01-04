@@ -1,4 +1,7 @@
-# Operations
+---
+layout: post
+title: Operations
+---
 
 * Jumphost: a single machine, very tightly secured, that is allowed to connect via SSH to the production servers.
 * ATG - ecommerce platform, DRP-Dynamo Request Protocol (similar to AJP)
@@ -56,13 +59,13 @@ Be careful with coupling and keep monitoring etc. separate as an exoskeleton
 
 ## Supporting processes
 
-* An effective feedback process can be described as “acting responsively to meaningful data.”
+* An effective feedback process can be described as "acting responsively to meaningful data."
 * Plan-Do-Check-Act or Observe-Orient-Decide-Act
 
 # Adaptation
 
 * The true birth of a system is when it gets to prod. This is a beginning, not an end. And above all the system must change to adapt.
-* form follows function” is false. “form follows failure."
+* form follows function is false. form follows failure.
 * Any action to change the system has a cost: design, development, and testing effort, plus the cost of release
 * If the cost of making these changes exceeds the value returned by ﬁlling a gap or removing a bump, then the rational choice is to not make the change
 
@@ -81,20 +84,13 @@ from this onwards some things are a bit outdated
 * top-down architecture from one architect or group - tipically no good
 * use biological or ecological methaphor instead of mechanic one
 * Real enterprises are always messier than the enterprise architecture would ever admit.
-* most useful criterion for evaluating architectures is this: “Does it make IT better at responding to its users’ needs?”
+* most useful criterion for evaluating architectures is this: "Does it make IT better at responding to its users' needs?"
 * dependecies within the system - loose cluster
 * Dependencies Between Systems: Protocols, versioning, database int. (no)
 
-## Releases Shouldn’t Hurt
+## Releases Shouldn't Hurt
 
 * if it's painful do it more often and get good at it
 * faster feedback loop
-* timing releases: Don’t risk customers for an arbitrary release date
+* timing releases: Don't risk customers for an arbitrary release date
 * Zero Downtime Deployments: expansion (new versions of deps), rollout, cleanup
-
-
-
-
-
-
-

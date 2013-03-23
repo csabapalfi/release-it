@@ -1,7 +1,4 @@
----
-layout: post
-title: General Design Issues
----
+# General Design Issues
 
 # Networking
 

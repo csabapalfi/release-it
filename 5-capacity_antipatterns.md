@@ -1,7 +1,4 @@
----
-layout: post
-title: Capacity antipatterns
----
+# Capacity antipatterns
 
 ## Resource Pool Contention
 * resource pool - necessary evil

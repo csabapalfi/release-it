@@ -1,7 +1,4 @@
----
-layout: post
-title: Capacity
----
+# Capacity
 
 ## Defining Capacity
 *  Performance measures how fast the system processes a single transaction

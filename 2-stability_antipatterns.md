@@ -1,7 +1,4 @@
----
-layout: post
-title: Stability antipatterns
----
+# Stability antipatterns
 
 ## Integration points
 * Every integration point will eventually fail in some way, and youneed to be prepared for that failure.

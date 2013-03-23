@@ -1,7 +1,4 @@
----
-layout: post
-title: Capacity patterns
----
+# Capacity patterns
 
 ## Pool connections
 

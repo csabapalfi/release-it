@@ -1,7 +1,4 @@
----
-layout: post
-title: Stability
----
+# Stability
 
 ## Definitons
 

@@ -1,7 +1,4 @@
----
-layout: post
-title: Stability patterns
----
+# Stability patterns
 
 ## Use Timeouts
 * Apply to Integration Points, Blocked Threads, and Slow Responses

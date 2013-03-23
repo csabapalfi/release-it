@@ -1,7 +1,4 @@
----
-layout: post
-title: Operations
----
+# Operations
 
 * Jumphost: a single machine, very tightly secured, that is allowed to connect via SSH to the production servers.
 * ATG - ecommerce platform, DRP-Dynamo Request Protocol (similar to AJP)

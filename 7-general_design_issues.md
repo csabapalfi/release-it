@@ -95,7 +95,7 @@ Load balancing does not require collaboration between the separate servers. When
 * tipcally confgiuration and topology differences
 * Topology is the number and connectivity of the servers and applications
 * sharing hosts that'll be different in prod. (solution: virtualize in QA)
-* Zero, One, Many - if prod has twelve run at least two in prod
+* Zero, One, Many - if prod has twelve run at least two in QA
 
 ## Conﬁguration Files
 * enterprise system: loads of configuration files

@@ -1,9 +1,7 @@
 # Operations
 
 * Jumphost: a single machine, very tightly secured, that is allowed to connect via SSH to the production servers.
-* ATG - ecommerce platform, DRP-Dynamo Request Protocol (similar to AJP)
 * The ability to restart components, instead of entire servers, is a key concept of recovery-oriented computing
-* http://roc.cs.berkeley.edu/
 * Failures are inevitable and not all of them can be predicted. Human action is a major source of system failures.
 * improve survivability in the face of failures: damage containment, automatic fault detection, and component-level restartability
 
@@ -33,7 +31,7 @@ Be careful with coupling and keep monitoring etc. separate as an exoskeleton
 * still the best
 * location not good - tiplically symlinks as workaround
 * log levels - no debug logs in prod, ideally you have env-spec config anyway
-* Error codes in logs -unambigous communicstion between ops and dev
+* Error codes in logs -unambigous communication between ops and dev
 * Human readable
 * SessionId, userid, guid in logs (MDC)
 
@@ -43,7 +41,8 @@ Be careful with coupling and keep monitoring etc. separate as an exoskeleton
 * detecting patterns in logfiles, syslog, system metrics, JMX
 * agent goes down when a complete host is lost
 * monitoring traffic should not cross VLANs that carry public trafﬁc
-* gaps in commercial systems: not aware of business features, server might be all ok but customer experience still bad because of other issues (cookier, etc)
+* gaps in commercial systems: not aware of business features
+* server might be all ok but customer experience still bad because of other issues
 * tealeaf -> focusing on customer experience
 * usually monitoring systems are already in place when desinging a new application/system
 * monitoring standards: SNMP, CIM, JMX
@@ -52,7 +51,7 @@ Be careful with coupling and keep monitoring etc. separate as an exoskeleton
 
 * collect operation data from logs and monitoring in a DB
 * logs database - Splunk
-* maybe also implement an API so apps can add data to the opsDB (probably better off with async/decoupled writes)
+* maybe also implement an API so apps can add data to the opsDB (async/decoupled writes)
 
 ## Supporting processes
 
@@ -65,8 +64,6 @@ Be careful with coupling and keep monitoring etc. separate as an exoskeleton
 * form follows function is false. form follows failure.
 * Any action to change the system has a cost: design, development, and testing effort, plus the cost of release
 * If the cost of making these changes exceeds the value returned by ﬁlling a gap or removing a bump, then the rational choice is to not make the change
-
-from this onwards some things are a bit outdated
 
 ## Adaptable Software Design
 

@@ -1,6 +1,6 @@
 # Stability
 
-## Definitons
+## Define: transaction, system, resilience
 
 * a transaction is an abstract unit of work processed by the system.
 * a system is a collection of hosts, applications, network segments, power supplies... that process transactions from end to end
